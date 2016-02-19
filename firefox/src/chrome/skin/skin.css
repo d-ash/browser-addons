@@ -1,0 +1,7 @@
+#nameyourhorse-toolbar-button {
+	list-style-image: url("chrome://nameyourhorse/skin/icon_on.png");
+}
+
+#nameyourhorse-toolbar-button.turnedoff {
+	list-style-image: url("chrome://nameyourhorse/skin/icon_off.png");
+}

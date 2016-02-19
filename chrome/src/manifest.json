@@ -1,0 +1,22 @@
+{
+	"name": "Name-Your-Horse Agent",
+	"version": "0.1",	// the whole line will be automatically REPLACED by ./build.sh
+	"description": "Access Name-Your-Horse everywhere!",
+	"update_url": "https://nameyourhorse.com/addons/chrome/update.xml",
+	"background_page": "background.html",
+//	"browser_action": {
+//		"name": "Turn on/off"
+//	},
+	"permissions": [
+		"tabs",
+		"*://*/*"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["init.js"],
+			"run_at": "document_end",	// DOMContentReady
+			"all_frames": true
+		}
+	]
+}

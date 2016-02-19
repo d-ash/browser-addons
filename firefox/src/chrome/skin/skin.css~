@@ -1,0 +1,7 @@
+#tovarus-toolbar-button {
+	list-style-image: url("chrome://tovarus/skin/icon_on.png");
+}
+
+#tovarus-toolbar-button.turnedoff {
+	list-style-image: url("chrome://tovarus/skin/icon_off.png");
+}

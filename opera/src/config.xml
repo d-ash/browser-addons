@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+	id="https://nameyourhorse.com/addons/opera/index.html" version="{__EXTENSION_VERSION__}">
+	<name>Name-Your-Horse Agent</name>
+	<description>Access Name-Your-Horse everywhere!</description>
+	<author href="https://nameyourhorse.com" email="support@nameyourhorse.com">Name-Your-Horse</author>
+	<icon src="icons/icon_64x64.png" />
+	<update-description href="https://nameyourhorse.com/addons/opera/update.xml" />
+</widget>

@@ -1,0 +1,3 @@
+all:
+	gcc -m32 -Wall -dynamiclib -framework AppKit -fvisibility=hidden rymnik_osx.m -o librymnik_osx.dylib
+	gcc -m32 -Wall -rdynamic rymnik_osx_test.m -o rymnik_osx_test
