@@ -1,13 +1,14 @@
 # Browser Add-ons
 
 ## Overview
-
-These browser add-ons (extensions) were a part of one of my previous projects. They are essentially the same, the difference is in ... API.
+<!--
+These browser add-ons (extensions) were a part of one of my previous projects. They are essentially the same, the difference is in ... API. The add-ons communicate with a remote back-end service over HTTPS.
+-->
 
 
 ## User Interface
 
-These add-ons add a sticky button onto every page opened by a user. When the button is clicked, a dialog pops over the page contents, and the user can take several actions. The add-ons communicate with a remote back-end service over HTTPS.
+These add-ons add a sticky button onto every page opened by a user. When the button is clicked, a dialog pops over the page contents, and the user can take several actions.
 
 #### Default state of the button
 ![Default state of the button](screenshots/default.png)
@@ -19,7 +20,7 @@ These add-ons add a sticky button onto every page opened by a user. When the but
 ![Taking a screenshot](screenshots/taking-ss.png)
 
 ## Implementation
-
+<!--
 (indirectly, via an angent script).
 
 that inject addition functionality into every page a user visits.
@@ -44,3 +45,4 @@ Communicates with Agent via specially constructed DOM nodes and their attributes
 
 We need to have our own implementation of JSON because the native one could be corrupted by foreign scripts.
 Communicates with a back-end service over HTTPS.
+-->
