@@ -1,4 +1,0 @@
-all:
-	gcc -Wall -fPIC -c rymnik_linux.c -o rymnik_linux.o
-	gcc -shared -Wl,-soname,librymnik_linux -o librymnik_linux.so rymnik_linux.o
-	gcc -Wall -rdynamic -ldl rymnik_linux_test.c -o rymnik_linux_test

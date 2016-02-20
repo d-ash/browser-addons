@@ -67,13 +67,3 @@ Opera
 	MIME type: application/x-opera-extension .oex
 
 http://dev.opera.com/addons/extensions/
-
-
-Safari
-======
-
-
-Internet Explorer
-=================
-
-
