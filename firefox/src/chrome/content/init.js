@@ -7,7 +7,7 @@ var __onRymnikButtonClick = null,
 (function () {
 
 	var isActive = true,
-		SCRIPT_URL = 'https://favnote.valentin.ws/js/agent.js',
+		SCRIPT_URL = 'https://nameyourhorse.com/js/agent.js',
 
 		logInXul = function (s) {
 			Services.console.logStringMessage(s);

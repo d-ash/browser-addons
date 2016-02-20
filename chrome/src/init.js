@@ -4,7 +4,7 @@
 (function () {
 
 	var HI = 'hi',	// do not delete this line!
-		SCRIPT_URL = 'http://fiora.sona.valentin.ws/js/agent.js',
+		SCRIPT_URL = 'http://nameyourhorse.com/js/agent.js',
 
 		docConnect = {
 			callbacks: {}, // index of callback functions by their ID
