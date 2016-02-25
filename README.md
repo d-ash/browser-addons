@@ -8,7 +8,7 @@ There are three separate versions of the add-on, for Chrome, Firefox, and Opera.
 
 An init script is executed on the page's DOM, but without any access to the page's javascript (it's a security policy of the browsers). It loads `agent.js` into the page, and starts to communicate with it via specially constructed DOM nodes and their attributes (duplex callback protocol).
 
-For security reasons we had to provide our own implementation of JSON encoder/decoder, as native implementations could be corrupted by native scripts, loaded along with the page.
+For security reasons we had to provide our own implementation of JSON encoder/decoder, because native implementations could be corrupted by native scripts, loaded along with the page.
 
 ## User Interface
 
