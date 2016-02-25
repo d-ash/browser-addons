@@ -14,11 +14,13 @@ For security reasons we had to provide our own implementation of JSON encoder/de
 
 A sticky button is added on the left side of every loaded page. The user clicks the button and a dialog pops up over the page's contents. It becomes a part of the page's DOM, and it's code is working within the page's context.
 
-Default state of the button
+
+Default state of the button  
 ![Default state of the button](screenshots/default.png)
 
-Dialog on the page
+
+Dialog on the page  
 ![Dialog on the page](screenshots/dialog.png)
 
-Taking a screenshot of a selected area (will be sent to a remote server)
+Taking a screenshot of a selected area (will be sent to a remote server)  
 ![Taking a screenshot](screenshots/taking-ss.png)
