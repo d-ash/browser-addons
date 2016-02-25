@@ -1,48 +1,24 @@
 # Browser Add-ons
 
-## Overview
-<!--
-These browser add-ons (extensions) were a part of one of my previous projects. They are essentially the same, the difference is in ... API. The add-ons communicate with a remote back-end service over HTTPS.
--->
+These add-ons were used in one of my previous projects. There function is to inject our javascript code into every open page, so that the page could communicate with our back-end server.
 
+## Implementation
+
+There are three separate versions of the add-on, for Chrome, Firefox, and Opera. The difference is how *a background script*, working in the browser's sandbox, talks with *an init script*, that has acces to the page's DOM.
+
+An init script is executed on the page's DOM, but without any access to the page's javascript (it's a security policy of the browsers). It loads `agent.js` into the page, and starts to communicate with it via specially constructed DOM nodes and their attributes (duplex callback protocol).
+
+For security reasons we had to provide our own implementation of JSON encoder/decoder, as native implementations could be corrupted by native scripts, loaded along with the page.
 
 ## User Interface
 
-These add-ons add a sticky button onto every page opened by a user. When the button is clicked, a dialog pops over the page contents, and the user can take several actions.
+A sticky button is added on the left side of every loaded page. The user clicks the button and a dialog pops up over the page's contents. It becomes a part of the page's DOM, and it's code is working within the page's context.
 
-#### Default state of the button
+Default state of the button
 ![Default state of the button](screenshots/default.png)
 
-#### Dialog on the page
+Dialog on the page
 ![Dialog on the page](screenshots/dialog.png)
 
-#### Taking a screenshot of a selected area
+Taking a screenshot of a selected area (will be sent to a remote server)
 ![Taking a screenshot](screenshots/taking-ss.png)
-
-## Implementation
-<!--
-(indirectly, via an angent script).
-
-that inject addition functionality into every page a user visits.
-
-The add-ons are (Chrome, Firefox, and Opera).
-Here are three extensions 
-
-
-
-Add on every page a button ... with dialogs.
-Take screenshots of a selected area on the page.
-
-
-
-
-
-Due to security restrictions...
-This script is executed on the page's DOM but without any access to the page's javascript.
-Communicates with Agent via specially constructed DOM nodes and their attributes (duplex callback protocol).
-
-### Agent.js
-
-We need to have our own implementation of JSON because the native one could be corrupted by foreign scripts.
-Communicates with a back-end service over HTTPS.
--->
